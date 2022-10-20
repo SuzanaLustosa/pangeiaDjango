@@ -1,0 +1,46 @@
+.login_titulo-cadastro {
+    text-transform: uppercase;
+    color: var(--amarelo-primario);
+    text-align: center;
+    font-size: 48px;
+    margin-top: 1em;
+}
+
+.input_perfil-cadastro {
+    width: 30%;
+    padding: 1.2em 1em;
+    border-radius: 14px;
+    background: var(--cor-input);
+    display: block;
+    border: 1px solid black;
+    margin: 2em auto 0 auto;
+}
+
+.titulo_perfil-cadastro {
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.caixa_botao {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.botao_perfil-cadastrar {
+    background-color: var(--cor-botao);
+    color: var(--amarelo-primarioMais);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.botao_perfil-cadastrar:hover {
+    opacity: 80%;
+    cursor: pointer;
+    padding: 1.2em 2.2em;
+}

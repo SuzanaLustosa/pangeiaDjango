@@ -1,0 +1,64 @@
+.primeira__secao {
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 50% 50%; /*duas colunas ocupando 50% da tela*/
+}
+
+.imagem__logo {
+    width: 100%; /*ocupa 100% da coluna*/
+}
+
+.container {
+    margin: 8em 2em;
+}
+
+.login__titulo {
+    text-transform: uppercase;
+    color: var(--amarelo-primario);
+    text-align: center;
+    font-size: 48px;
+}
+
+.formulario {
+    margin-top: 5em;
+}
+
+.input-comum {
+    width: 90%;
+    padding: 1.2em 1em;
+    margin: 1em 0;
+    border-radius: 14px;
+    background: var(--cor-input);
+    display: block;
+    border: 1px solid black;
+}
+
+.salvar-informacoes {
+    position: absolute;
+    right: 65px;
+}
+
+.botao {
+    background-color: var(--cor-botao);
+    color: var(--amarelo-primarioMais);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1em 2em;
+    margin-top: 1.5em;
+}
+
+.botao-cadastro {
+    text-decoration: none;
+    color: var(--amarelo-primarioMais);
+}
+
+.botao:hover {
+    opacity: 80%;
+    cursor: pointer;
+    padding: 1.2em 2.2em;
+}
+
+.cadastro {
+    text-align: center;
+}

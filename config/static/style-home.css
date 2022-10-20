@@ -1,0 +1,142 @@
+.container-home {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.menu__lateral-home {
+    background-color: var(--amarelo-primarioMais);
+    height: 100vh;
+}
+
+.lista__icones {
+    padding: 1.5em;
+    text-align: center;
+}
+
+.lista__icones-imagem {
+    width: 20%;
+}
+
+.lista__icones-imagem:hover {
+    width: 25%;
+    opacity: 80%;
+}
+
+.cabecalho-home {
+    display: flex;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+.pesquisa-home {
+    padding: 1em 1em;
+    background-color: var(--cor-input);
+    border-radius: 14px;
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+    margin-top: 2.5em;
+}
+
+.pesquisa-home::placeholder {
+    background-image: url(icones/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: var(--preto);
+}
+
+.lista__cabecalho-home {
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 10em;
+    padding-left: 20em;
+}
+
+.lista__cabecalho-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    color: var(--preto);
+    padding-left: 0.8em;
+}
+
+.lista__cabecalho-link:hover {
+    text-decoration: underline;
+}
+
+.usuario-caixa {
+    border: 1px solid var(--amarelo-primarioMais);
+    background-color: var(--amarelo-primarioMais);
+    height: 50%;
+    margin-left: 1em;
+}
+
+.usuario-foto {
+    padding: 1.5em;
+}
+
+.links-perfil {
+    width: 9%;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.formatando__link-perfil {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.formatando__link-perfil:hover {
+    text-decoration: underline;
+}
+
+.acessar {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.aulas {
+    background-color: var(--cor-botao);
+    margin-left: 3em;
+    margin-right: 0.8em;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+}
+
+.aulas-link {
+    padding: 1em;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.nome-aulas {
+    text-decoration: none;
+    color: white;
+}
+
+.aulas-imagem {
+    width: 100%;
+}
+
+.rodape {
+    background-color: var(--amarelo-primarioMais);
+    margin-top: 2em;
+    position: relative;
+}
+
+.imagem-rodape {
+    width: 3%;
+    padding: 3em;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.logo-rodape {
+    width: 10%;
+    position: absolute;
+    right: 0;
+}

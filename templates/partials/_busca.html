@@ -1,0 +1,24 @@
+{% load static %}
+<section class="cabecalho-container">
+    <header class="cabecalho-home">
+        <form action="{% url 'buscar' %}">
+            <input type="text" name="buscar" placeholder="Pesquisar idioma" class="pesquisa-home">
+        </form>
+         <ul class="lista__cabecalho-home">
+            <li class="lista__cabecalho-item">
+                <a href="{% url 'home' %}" class="lista__cabecalho-link">Atualizar página</a>
+            </li>
+            <li class="lista__cabecalho-item">
+                <a href="{% url 'index' %}" class="lista__cabecalho-link">Logout</a>
+            </li>
+         </ul>
+         
+        <p class="usuario-caixa">
+            <a href="{% url 'perfil' %}"><img src="{% static 'icones/user.png' %}" alt="imagem usuário" class="usuario-foto"></a>
+        </p>
+        
+        <div class="links-perfil">
+            <a href="{% url 'perfil' %}" class="nome formatando__link-perfil">{{user.username}}</a>
+            <a href="{% url 'perfil' %}" class="acessar formatando__link-perfil">Acessar perfil</a>
+        </div>
+    </header>

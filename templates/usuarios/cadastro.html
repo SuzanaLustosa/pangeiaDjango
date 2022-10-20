@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'logo pangeia/favicon.png' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cadastro - Pangeia</title>
+</head>
+<body>
+    <h1 class="login_titulo-cadastro">Cadastre-se</h1>
+    <section>
+        <form action="{% url 'cadastro' %}" method="POST">
+            {% csrf_token %}
+            <input required type="text" name="nome" id="" placeholder="Nome e sobrenome" class="input_perfil-cadastro"> 
+            <input required type="email" name="email" id="" placeholder="Email" class="input_perfil-cadastro">
+            <input required type="password" name="senha" id="" placeholder="Senha" class="input_perfil-cadastro">
+            <input required type="password" name="senhaConfirmada" id="" placeholder="Repetir senha" class="input_perfil-cadastro">
+
+            <div class="caixa_botao">
+                <button class="botao_perfil-cadastrar" type="submit">Finalizar cadastro</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

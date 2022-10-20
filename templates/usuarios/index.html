@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'logo pangeia/favicon.png' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Login - Pangeia</title>
+</head>
+<body>
+    <section class="primeira__secao">
+        <img src="{% static 'logo pangeia/logo.png' %}" alt="logo da pangeia" class="imagem__logo">
+        
+        <div class="container">
+            <h1 class="login__titulo">Login</h1>
+            <div class="formulario">
+                <form action="{% url 'index' %}" method="POST" class="formulario">
+                    {% csrf_token %}
+                    <label for="email">E-mail</label>
+                    <input name="email" type="email" class="input-comum" placeholder="Digite seu e-mail">
+
+                    <label for="senha">Senha</label>
+                    <input name="senha" type="password" class="input-comum" placeholder="Digite sua senha">
+
+                    <fieldset class="salvar-informacoes">
+                        <input type="checkbox" id="salvar-informacoes" name="salvar" value="informações" class="caixinha">
+                        <label for="salvar-informacoes">Salvar informações de login</label>
+                    </fieldset>
+
+                    <button class="botao" type="submit">Entrar</button>
+
+                    <div class="cadastro">
+                        <p class="paragrafo__cadastro">Não tem cadastro?</p>
+                        <button class="botao"><a href="{% url 'cadastro' %}" class="botao-cadastro">Criar uma conta agora</a></button>
+                    </div>
+            </form>
+        </div>
+        </div>    
+    </section>
+</body>
+</html>

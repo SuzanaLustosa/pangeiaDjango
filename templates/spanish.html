@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo pangeia/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Espanhol - Pangeia</title>
+</head>
+<body>
+    <section>
+        <header class="cabecalho-home-aulas">
+             <ul class="lista__cabecalho-aulas">
+                <li class="lista__cabecalho-item-aulas">
+                    <a href="{% url 'home' %}" class="lista__cabecalho-link-aulas">Página inicial</a>
+                </li>
+                <li class="lista__cabecalho-item">
+                    <a href="" class="lista__cabecalho-link-aulas">Loja</a>
+                </li>
+                <li class="lista__cabecalho-item">
+                    <a href="" class="lista__cabecalho-link-aulas">Contato</a>
+                </li>
+             </ul>
+             
+            <p class="usuario-caixa">
+                <a href="{% url 'perfil' %}"><img src="{% static 'icones/user.png' %}" alt="imagem usuário" class="usuario-foto"></a>
+            </p>
+            
+            <div class="links-perfil">
+                <a href="{% url 'perfil' %}" class="nome formatando__link-perfil">Nome Sobrenome</a>
+                <a href="{% url 'perfil' %}" class="acessar formatando__link-perfil">Acessar perfil</a>
+            </div>
+        </header>
+    </section>
+
+        <main class="aulas-opcoes">
+            <div>
+                <h1 class="login__titulo">{{ aula.nome_aula }}</h1>
+                <video src="{% static 'videos/Pangeia Protótipo - Figma 2022-06-14.mp4' %}" class="video-aula" height="350" controls preload
+                poster="{{ aula.foto_aula.url }}">
+                </video>
+                <p>Por: {{ aula.pessoa }}</p>
+            </div>
+
+            <div class="opcoes">
+                <ul>
+                    <li>
+                        <h3 class="botao-aulas">Básico</h3>
+                    </li>
+                    <li>
+                        <h3 class="botao-aulas">Intermediário</h3>
+                    </li>
+                    <li>
+                        <h3 class="botao-aulas">Avançado</h3>
+                    </li>
+                    <li>
+                        <h3 class="botao-aulas">Material de apoio</h3>
+                    </li>
+                    <li>
+                        <h3 class="botao-aulas">Exercícios</h3>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        {% include 'partials/_footer.html' %}
+</body>
+</html>

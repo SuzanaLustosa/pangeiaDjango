@@ -1,0 +1,21 @@
+@import url(login.css);
+@import url(style-home.css);
+@import url(reset.css);
+@import url(aulas.css);
+@import url(perfil.css);
+@import url(cadastro.css);
+
+:root {
+    --amarelo-primario: #F1C40F;
+    --amarelo-primarioMais: #CCA402;
+    --cor-fundo: #F0F0F0;
+    --cor-input: rgba(0, 0, 0, 0.2);
+    --cor-botao : #1C2A38;
+    --preto: #000000
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-fundo);
+}
+
